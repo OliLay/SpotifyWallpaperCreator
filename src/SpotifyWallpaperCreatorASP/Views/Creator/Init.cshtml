@@ -1,0 +1,54 @@
+﻿@model SpotifyWallpaperCreatorASP.ViewModels.CreatorViewModel
+@{
+    ViewData["heading"] = "Spotify Wallpaper Creator";
+}
+@if (Model.CreatingFailed)
+{
+     <p class="error">Could not create your desired image! Try a higher tile size or allow duplicates.</p>
+}
+<h3 class="step-heading">Step 1: Choose playlist(s)</h3>
+Your playlist has to be public to be able to select it here. <br />
+
+@using (Html.BeginForm("Create", "Creator"))
+{
+<table class="playlist-table">
+        <tr>
+            <th>Name</th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model.User.Playlists)
+        {
+            <tr class="playlist-table-content-tr">
+                <td>@item.Name</td>
+                <td class="spotify-playlists-td-checkbox">
+                     <input type="checkbox" name="playlistsSelected" id="@item.ID" value="@item.ID">
+                </td>
+            </tr>
+        }
+</table>
+<h3>Step 2: Set image attributes</h3>
+<br />
+
+<div class="dropdown-image-settings">
+    <span class="image-size-dd">
+        Image size:
+        @Html.DropDownList("imageSize", Model.ImageResolutionViewModel.Resolutions)
+    </span>
+
+    <span class="tile-size-dd">
+        Tile size:
+        @Html.DropDownList("tileSize", Model.TileResolutionViewModel.Resolutions)
+    </span>
+</div>
+
+<br />
+
+@Html.CheckBox("useTileOnce", true); 
+<span class="checkbox-label"> Don't allow duplicates</span>
+<br />
+<br />
+<input type="hidden" name="username" id="username" value="@Model.User.Name" />
+
+<center><input type="submit" value="Create" /></center>
+
+}

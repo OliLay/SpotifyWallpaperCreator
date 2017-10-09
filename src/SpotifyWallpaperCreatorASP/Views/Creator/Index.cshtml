@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["heading"] = "Spotify Wallpaper Creator";
+}
+<p>This tool generates an image containing Spotify cover images of your playlists. <br />
+Please enter your Spotify username in order to receive your playlists.
+Bear in mind that this is an early alpha version of the tool.</p> <br />
+If you connected your Spotify account with Facebook you have to retrieve your Spotify account name by logging into the <a href="https://www.spotify.com">Spotify website</a>.
+    <br />
+    <br />
+    <br />
+
+    @using (Html.BeginForm("Init", "Creator"))
+    {
+        <center>
+            <input id="spotifyUsername" name="username" type="text" />
+            <input id="submit" type="submit" value="Submit" />
+        </center>
+    }

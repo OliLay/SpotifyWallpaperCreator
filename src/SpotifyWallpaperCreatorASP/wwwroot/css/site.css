@@ -1,0 +1,266 @@
+﻿
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 350px;
+}
+
+/* Content */
+body {
+    margin: 0px;
+}
+
+.outer {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../images/bg.png");
+    overflow: auto;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    overflow: auto;
+}
+
+.nav {
+    margin-top: 100px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 0px;
+    background-color: white;
+    width: 100px;
+    height: 400px;
+    float: left;
+}
+
+.content-box {
+    margin-top: 100px;
+    margin-left: 115px;
+    background-color: white;
+    border: solid;
+    border-color: crimson;
+    border-width: 1px;
+    width: 700px;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.content-header {
+    margin-left: 0px;
+    padding-left: 15px;
+    width: inherit;
+    height: 50px;
+    background-color: crimson;
+    color: white;
+}
+
+.content {
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 350px;
+    overflow-y: auto;
+}
+
+.home-link {
+    width: inherit;
+}
+
+.home {
+    display: inline-block;
+    width: inherit;
+    height: 100px;
+    border: solid;
+    color: black;
+    border-color: crimson;
+    border-width: 1px;
+    border-bottom-width: 0px;
+    line-height: 95px;
+    text-align: center;
+}
+
+.home:hover {
+    color: white;
+    background-color: black;
+}
+
+.spotify-link {
+    width: inherit;
+}
+
+.spotify {
+    display: inline-block;
+    width: inherit;
+    height: 100px;
+    border: solid;
+    color: black;
+    border-color: crimson;
+    border-width: 1px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    line-height: 95px;
+    text-align: center;
+}
+
+.spotify:hover {
+    color: white;
+    background-color: black;
+}
+
+.github-link {
+    width: inherit;
+}
+
+.github {
+    display: inline-block;
+    width: inherit;
+    height: 100px;
+    border: solid;
+    color: black;
+    border-color: crimson;
+    border-width: 1px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    line-height: 95px;
+    text-align: center;
+}
+
+.github:hover {
+    color: white;
+    background-color: black;
+}
+
+.about-link {
+    width: inherit;
+}
+
+.about {
+    display: inline-block;
+    width: inherit;
+    height: 100px;
+    border: solid;
+    color: black;
+    border-color: crimson;
+    border-width: 1px;
+    border-top-width: 0px;
+    line-height: 95px;
+    text-align: center;
+}
+
+.about:hover {
+    color: white;
+    background-color: black;
+}
+
+.about-image {
+    width: 200px;
+    height: 250px;
+    float: left;
+    text-align: center;
+}
+
+.about-content {
+    margin-left: 20px;
+    float: left;
+}
+
+
+.playlist-table td {
+    border: solid;
+    border-width:1px;
+    border-left-width:0px;
+    border-right-width:0px;
+    border-color: crimson;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.playlist-table-content-tr:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.spotify-playlists-td-checkbox {
+    padding-right: 5px !important;
+}
+
+.playlist-table th {
+    padding-left: 4px;
+}
+
+.error {
+    color: crimson;
+    font-size: large;
+}
+
+.tile-size-dd {
+    margin-left: 20px;
+}
+
+.fa-4x {
+    line-height:inherit!important;
+}
+
+.content-heading {
+    margin-top: 0px;
+    font-size:x-large;
+    color: white;
+    float:left;
+    padding-top: 12px;
+    padding-left: 12px;
+}
+
+.fa-angle-right {
+    float: left;
+    padding-top: 18px;
+    padding-left: 3px;
+}
+
+.step-heading {
+    margin-top: 0px;
+}
+
+.spotify-text {
+    font-size: smaller;
+}
+
+.about-image-text {
+    margin-top: 7px;
+    font-size: smaller;
+    color: darkgrey;
+}
+
+.about-table td {
+    border: solid;
+    border-width:1px;
+    border-left-width:0px;
+    border-right-width:0px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-color: crimson;
+    padding-right: 50px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.about-table-content-tr:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.fa-1x {
+    color: black;
+}
+
+.fa-1x:hover {
+    color: white;
+}
